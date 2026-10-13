@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KL Placement Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>KL Placement Management System</h1>
+    <p>Student Placement Portal</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Student Details</h2>
+      <input id="name" placeholder="Student Name">
+      <input id="roll" placeholder="Roll Number">
+      <select id="course">
+        <option>CSE</option>
+        <option>ECE</option>
+        <option>EEE</option>
+        <option>Mechanical</option>
+        <option>Civil</option>
+      </select>
+      <input id="cgpa" type="number" min="0"
+             max="10" step="0.01"
+             placeholder="CGPA">
+      <button onclick="checkEligibility()">
+        Check Placement Eligibility
+      </button>
+      <p id="result"></p>
+    </section>
+
+    <section>
+      <h2>Recruiting Companies</h2>
+      <div class="companies">
+        <article>TCS</article>
+        <article>Infosys</article>
+        <article>Wipro</article>
+        <article>Accenture</article>
+      </div>
+      <p>Example companies for demonstration.</p>
+    </section>
+  </main>
+
+  <footer>KL Placement Management System | Demo</footer>
+  <script src="script.js"></script>
+</body>
+</html>
